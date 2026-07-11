@@ -8,31 +8,45 @@ date: "2026-07-11"
 
 
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
 
 ``` r
-summary(cars)
+mpg
 ```
 
 ```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
+## # A tibble: 234 × 11
+##    manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class
+##    <chr>        <chr>      <dbl> <int> <int> <chr> <chr> <int> <int> <chr> <chr>
+##  1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…
+##  2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…
+##  3 audi         a4           2    2008     4 manu… f        20    31 p     comp…
+##  4 audi         a4           2    2008     4 auto… f        21    30 p     comp…
+##  5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…
+##  6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…
+##  7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…
+##  8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…
+##  9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…
+## 10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…
+## # ℹ 224 more rows
 ```
 
-## Including Plots
+``` r
+head(mpg)
+```
 
-You can also embed plots, for example:
+```
+## # A tibble: 6 × 11
+##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
+##   <chr>        <chr> <dbl> <int> <int> <chr>      <chr> <int> <int> <chr> <chr> 
+## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…
+## 2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa…
+## 3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa…
+## 4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa…
+## 5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa…
+## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…
+```
 
-![](test_files/figure-html/pressure-1.png)<!-- -->![](test_files/figure-html/pressure-2.png)<!-- -->
+![](test_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
