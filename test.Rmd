@@ -1,8 +1,12 @@
 ---
 title: "test"
+<<<<<<< HEAD
 output: 
   html_document: 
     keep_md: true
+=======
+output: html_document
+>>>>>>> 77c6d75d94214d70d6bb08b9ee43017b70635733
 date: "2026-07-11"
 ---
 
